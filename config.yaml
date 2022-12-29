@@ -1,0 +1,15 @@
+output_dir: "/e/data/thessis_movies/analysis_B"
+minimal_frames_to_save: 15
+kps: 1  # frames per seconds
+detector:
+    yolo:
+        enable: False
+        score: 0.7
+    resnet:
+        enable: True
+        score: 0.6
+    dlib:
+        enable: False
+        score: 0.6
+tracking:
+    threshold_iou: 0.1 #betwean boxes
